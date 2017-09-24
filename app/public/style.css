@@ -1,2 +1,22 @@
-body {background-color: #346734;}
-h1 {font-size: 22px; font-family: Tahoma;}
+body {
+	background-color: #daddb1;
+}
+h1 {
+	font-size: 22px; font-family: Tahoma;
+}
+
+a {
+	color:black; text-decoration: none;
+}
+.outer {
+    
+  }
+  .inner {
+    width: 800px;
+    margin: auto;
+
+  }
+  .main{
+  	background: url(/images/eneida.jpg) no-repeat bottom center;
+    height: 600px;
+  }

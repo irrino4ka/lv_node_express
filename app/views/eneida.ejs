@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= siteTitle%> <%= pageTitle%></title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+  </head>
+  <body >
+    <div class="outer">
+      <div class="inner">
+      <% allEneida.forEach(function(item) { %>
+       <% if (pageId == 'eneida'){ %><li style="list-style-type: none;">
+        <a href="/eneida/<%= item.row %>"> 
+          <%- item.text %>
+        </a>
+        </li>
+         <% } %>
+         <% if (pageId == 'eneidaRow'){ %><li style="list-style-type: none;">
+          <%- item.text %>
+        </li>
+         <% } %>
+       <% }); %>
+    </div>
+  </div>
+
+  </body>
+</html>
