@@ -1,0 +1,11 @@
+{
+  "name": "lv_node_express",
+  "version": "1.0.0",
+  "description": "Node and express eneida",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ira",
+  "license": "ISC"
+}
