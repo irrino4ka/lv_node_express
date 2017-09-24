@@ -7,18 +7,21 @@
   <body >
     <div class="outer">
       <div class="inner">
+       <ul> 
       <% allEneida.forEach(function(item) { %>
-       <% if (pageId == 'eneida'){ %><li style="list-style-type: none;">
+       <% if (pageId == 'eneida'){ %><li>
         <a href="/eneida/<%= item.row %>"> 
           <%- item.text %>
         </a>
         </li>
          <% } %>
-         <% if (pageId == 'eneidaRow'){ %><li style="list-style-type: none;">
+         <% if (pageId == 'eneidaRow'){ %><li>
           <%- item.text %>
         </li>
+        <li><a class="back" href="/eneida/">До тексту </a></li>
          <% } %>
        <% }); %>
+     </ul>
     </div>
   </div>
 
