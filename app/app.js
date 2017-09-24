@@ -8,14 +8,13 @@ app.get('/', function(req, res){
 	var info = '';
 	dataFile.eneida.forEach(function(item){
 		info += `
-		<li>
-			<b>${item.row}</b>
+		<li style="list-style-type:none;">
 			<p>${item.text}</p>
 		</li>
 
 		`;
 	})
-	res.send(`<h1>Hello !</h1>
+	res.send(`<h1>Енеїда</h1>
 			${info}
 		`)
 }) ;
