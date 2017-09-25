@@ -33,7 +33,7 @@ router.get('/eneida/:eneidaid', function(req, res){
 
 
 
-module.exports = router;
+ module.exports = router;
 
 /*
 router.get('/eneida/:eneidaid', function(req, res){
