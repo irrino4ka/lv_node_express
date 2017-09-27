@@ -38,9 +38,10 @@ router.post('/eneida', function(req, res){
 		row : req.body.row,
 		text : req.body.text
 	} 
-	data.eneida.push(newRecord)
+	//console.log(data);
+	data.eneida.push(newRecord);
 
-	fs.writeFile('./app/data/myjsonfile.json', JSON.stringify(data.eneida), 'utf8');
+	fs.writeFile('./app/data/myjsonfile.json', JSON.stringify(data), 'utf8');
 });
 
 router.put('/eneida/:eneidaid', function(req, res){
@@ -55,7 +56,7 @@ router.put('/eneida/:eneidaid', function(req, res){
 	data.eneida.splice(myIndex, 1, newRecord);
 	//data.eneida.push(newRecord)
 	console.log(data.eneida);
-	//fs.writeFile('./app/data/myjsonfile.json', JSON.stringify(data.eneida), 'utf8');
+	fs.writeFile('./app/data/myjsonfile.json', JSON.stringify(data), 'utf8');
 });
 
 router.delete('/eneida/:eneidaid', function(req, res){
